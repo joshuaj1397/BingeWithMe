@@ -45,5 +45,5 @@ compile 'com.amazonaws:aws-android-sdk-s3:2.2.+'
 ## Authors
 * Joshua Johnson
 * Adriana Holley
-* Darell Donald
+* Darrel Donald
 * Misael Aguayo

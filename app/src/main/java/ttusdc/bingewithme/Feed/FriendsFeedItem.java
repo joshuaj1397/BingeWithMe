@@ -1,4 +1,4 @@
-package ttusdc.bingewithme;
+package ttusdc.bingewithme.Feed;
 
 public class FriendsFeedItem {
 

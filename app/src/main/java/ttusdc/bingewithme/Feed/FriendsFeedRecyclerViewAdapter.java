@@ -1,4 +1,4 @@
-package ttusdc.bingewithme;
+package ttusdc.bingewithme.Feed;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import ttusdc.bingewithme.FriendsFeedFragment.OnListFragmentInteractionListener;
+import ttusdc.bingewithme.R;
 
 import java.util.List;
 
@@ -14,10 +14,10 @@ public class FriendsFeedRecyclerViewAdapter extends
     RecyclerView.Adapter<FriendsFeedRecyclerViewAdapter.ViewHolder> {
 
   private final List<FriendsFeedItem> mValues;
-  private final OnListFragmentInteractionListener mListener;
+  private final FriendsFeedFragment.OnListFragmentInteractionListener mListener;
 
   public FriendsFeedRecyclerViewAdapter(List<FriendsFeedItem> items,
-      OnListFragmentInteractionListener listener) {
+      FriendsFeedFragment.OnListFragmentInteractionListener listener) {
     mValues = items;
     mListener = listener;
   }
@@ -25,7 +25,7 @@ public class FriendsFeedRecyclerViewAdapter extends
   @Override
   public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
     View view = LayoutInflater.from(parent.getContext())
-        .inflate(R.layout.fragment_item, parent, false);
+        .inflate(R.layout.friends_feed_item, parent, false);
     return new ViewHolder(view);
   }
 

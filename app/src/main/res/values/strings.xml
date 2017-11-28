@@ -1,3 +1,4 @@
 <resources>
+  <!--Annotate these sections by activity and fragment titles, provide any description if necessary-->
   <string name="app_name">Binge With Me</string>
 </resources>

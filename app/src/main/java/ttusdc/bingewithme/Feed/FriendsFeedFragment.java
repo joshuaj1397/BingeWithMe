@@ -30,6 +30,8 @@ public class FriendsFeedFragment extends Fragment {
   private OnListFragmentInteractionListener mListener;
   // TODO: Create database and link to FriendsFeed List
   private List<FriendsFeedItem> FriendsFeed = new ArrayList<>();
+  private FriendsFeedItem item1 = new FriendsFeedItem("Joshua Johnson", "Game of Thrones", "27/28");
+  private FriendsFeedItem item2 = new FriendsFeedItem("Matt Jordan","Rick and Morty","36/108");
 
   /**
    * Mandatory empty constructor for the fragment manager to instantiate the
@@ -72,6 +74,8 @@ public class FriendsFeedFragment extends Fragment {
         recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
       }
       // TODO: Initialize FriendsFeed with dummy data
+      FriendsFeed.add(item1);
+      FriendsFeed.add(item2);
       recyclerView.setAdapter(new FriendsFeedRecyclerViewAdapter(FriendsFeed, mListener));
     }
     return view;
@@ -107,6 +111,7 @@ public class FriendsFeedFragment extends Fragment {
    */
   public interface OnListFragmentInteractionListener {
     // TODO: Update argument type and name
+    // This method should start a new fragment that contains the profile of the selected friend
     void onListFragmentInteraction(FriendsFeedItem item);
   }
 }

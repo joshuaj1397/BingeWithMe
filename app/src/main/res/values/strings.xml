@@ -1,3 +1,5 @@
 <resources>
   <string name="app_name">Binge With Me</string>
+  <string name="facebook_app_id">205192546711952</string>
+  <string name="fb_login_protocol_scheme">fb205192546711952</string>
 </resources>
